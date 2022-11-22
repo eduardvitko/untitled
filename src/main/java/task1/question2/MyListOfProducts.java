@@ -210,7 +210,7 @@ public class MyListOfProducts<E> implements List<E> {
             return arr;
     }
     @Override
-    public Iterator  iterator()  {
+    public Iterator<E> iterator()  {
 
         return new Iterator() {
             @Override

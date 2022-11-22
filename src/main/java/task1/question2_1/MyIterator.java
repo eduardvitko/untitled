@@ -1,12 +1,17 @@
 package task1.question2_1;
 
+import task1.question2_2.Product;
+
 import java.util.Iterator;
 
 public class MyIterator <E>implements Iterator<E>{
-
+Product product = new Product();
 private E [] object;
 private int index=0;
-private int value = 0;
+;
+
+    public MyIterator() {
+    }
 
     public MyIterator(E[] object, int index) {
         object = object;
