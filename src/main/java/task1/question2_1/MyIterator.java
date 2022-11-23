@@ -27,4 +27,11 @@ private int index=0;
     public E next() {
         return object[index++];
     }
+    @Override
+    public  void remove(){
+        if (product.getPrice()<55){
+
+        }
+    }
+
 }

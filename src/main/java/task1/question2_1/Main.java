@@ -22,27 +22,25 @@ public class Main {
         Product beer = new Product(9, "Beer", 32);
         Product watter = new Product(10, "Watter", 18);
 
-        productList.add(0,rise);
-        productList.add(1,bread);
-        productList.add(2,butter);
-        productList.add(3,fish);
-        productList.add(4,meat);
-        productList.add(5,lemonade);
-        productList.add(6,orange);
-        productList.add(7,banana);
-        productList.add(8,beer);
-        productList.add(9,watter);
+        productList.add(0, rise);
+        productList.add(1, bread);
+        productList.add(2, butter);
+        productList.add(3, fish);
+        productList.add(4, meat);
+        productList.add(5, lemonade);
+        productList.add(6, orange);
+        productList.add(7, banana);
+        productList.add(8, beer);
+        productList.add(9, watter);
 
-
-
-        MyIterator<Product> iterator = new MyIterator<>();
-        productList.iterator();
-
-        while (iterator.hasNext()) {
-            int price = iterator.next().getPrice();
-            System.out.println(price);
-
+        Iterator <Product>myIterator = new MyIterator();
+        myIterator = productList.iterator();
+        int price = 0;
+        while (myIterator.hasNext()) {
+            Product product = myIterator.next();
+            product.setPrice(product.getPrice() + product.getPrice() / 10);
         }
+        System.out.println(productList);
 
 
     }
