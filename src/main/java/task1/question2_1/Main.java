@@ -1,10 +1,6 @@
 package task1.question2_1;
 
-import task1.question2_2.Product;
-
-import java.util.ArrayList;
-import java.util.Iterator;
-import java.util.List;
+import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
@@ -33,15 +29,23 @@ public class Main {
         productList.add(8, beer);
         productList.add(9, watter);
 
-        Iterator <Product>myIterator = new MyIterator();
+
+        Iterator<Product> myIterator = new MyIterator();
         myIterator = productList.iterator();
-        int price = 0;
+
+        int index = 0;
         while (myIterator.hasNext()) {
             Product product = myIterator.next();
-            product.setPrice(product.getPrice() + product.getPrice() / 10);
+            if (product.getPrice() > 100) {
+                System.out.println(productList.get(index));
+            }
+            index++;
         }
-        System.out.println(productList);
 
-
+//        List<Product> myList = (List<Product>) Collections.unmodifiableList(productList);
+//        Product wine = new Product(10,"Wine",125);
+//        myList.add(wine);
+//        System.out.println(myList);
     }
+
 }

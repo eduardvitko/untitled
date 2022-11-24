@@ -2,6 +2,7 @@ package task1.question2_2;
 
 import org.junit.Before;
 import org.junit.Test;
+import task1.question2_1.Product;
 
 import java.util.ArrayList;
 import java.util.Iterator;

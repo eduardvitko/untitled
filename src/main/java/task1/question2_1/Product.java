@@ -1,4 +1,4 @@
-package task1.question2_2;
+package task1.question2_1;
 
 import java.util.Objects;
 
@@ -37,7 +37,7 @@ public class Product {
         this.name = name;
     }
 
-    public int getPrice() {
+    public  int getPrice() {
         return price;
     }
 
