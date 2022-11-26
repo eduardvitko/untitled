@@ -1,5 +1,8 @@
 package task1.question2_1;
 
+import task1.question1.card.BankingCard;
+import task1.question1.card.CreditCard;
+
 import java.util.*;
 
 public class Main {
@@ -30,22 +33,12 @@ public class Main {
         productList.add(9, watter);
 
 
-        Iterator<Product> myIterator = new MyIterator();
-        myIterator = productList.iterator();
+        MyIterator myIterator = new MyIterator();
+        System.out.println(MyIterator.sortProducts(productList));
 
-        int index = 0;
-        while (myIterator.hasNext()) {
-            Product product = myIterator.next();
-            if (product.getPrice() > 100) {
-                System.out.println(productList.get(index));
-            }
-            index++;
-        }
 
-//        List<Product> myList = (List<Product>) Collections.unmodifiableList(productList);
-//        Product wine = new Product(10,"Wine",125);
-//        myList.add(wine);
-//        System.out.println(myList);
     }
-
 }
+
+
+

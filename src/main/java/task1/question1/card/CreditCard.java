@@ -1,17 +1,27 @@
 package task1.question1.card;
 
+import java.time.LocalDate;
 import java.util.Objects;
 
 public class CreditCard  extends BankingCard {
+
     private double totalBalance;
     private double balanceOfCredit;
     private double balanceOwnFunds;
     private double limitOfCredit;
     private double interestRate;
 
-    public CreditCard(double balanceOfCredit, double balanceOwnFunds) {
+    public CreditCard() {
+
+    }
+
+    public CreditCard(String nameBank, String typeCard, String CVVCode, double balance, String number, LocalDate dateExp, double totalBalance, double balanceOfCredit, double balanceOwnFunds, double limitOfCredit, double interestRate) {
+        super(nameBank, typeCard, CVVCode, balance, number, dateExp);
+        this.totalBalance = totalBalance;
         this.balanceOfCredit = balanceOfCredit;
         this.balanceOwnFunds = balanceOwnFunds;
+        this.limitOfCredit = limitOfCredit;
+        this.interestRate = interestRate;
     }
 
     public double addBalance(int money){
@@ -71,6 +81,7 @@ public class CreditCard  extends BankingCard {
                 ", interestRate=" + interestRate +
                 '}';
     }
+
 
     @Override
     public boolean equals(Object o) {
