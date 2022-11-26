@@ -13,7 +13,8 @@ private  double balance;
 
     }
 
-    public BankingCard(String nameBank, String typeCard, String CVVCode, double balance, String number, LocalDate dateExp) {
+    public BankingCard(String nameBank, String typeCard, String CVVCode, double balance,
+                       String number, LocalDate dateExp) {
         super(number,dateExp);
         this.nameBank = nameBank;
         this.typeCard = typeCard;
@@ -62,10 +63,12 @@ private  double balance;
     @Override
     public String toString() {
         return "BankingCard{" +
-                "name_Bank='" + nameBank + '\'' +
-                ", type_Card='" + typeCard + '\'' +
+                "nameBank='" + nameBank + '\'' +
+                ", typeCard='" + typeCard + '\'' +
                 ", CVV_Code='" + CVVCode + '\'' +
                 ", balance=" + balance +
+                ",number = " + getNumber() +
+                ", dateExp = " + getDateExp() +
                 '}';
     }
 

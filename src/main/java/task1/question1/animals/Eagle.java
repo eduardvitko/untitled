@@ -51,4 +51,44 @@ public class Eagle extends Bird{
         super.setColour(colour);
     }
 
+    @Override
+    public String getName() {
+        return super.getName();
+    }
+
+    @Override
+    public void setName(String name) {
+        super.setName(name);
+    }
+
+    @Override
+    public String getType() {
+        return super.getType();
+    }
+
+    @Override
+    public void setType(String type) {
+        super.setType(type);
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        return super.equals(o);
+    }
+
+    @Override
+    public int hashCode() {
+        return super.hashCode();
+    }
+
+    @Override
+    public String toString() {
+        return "Eagle{" +
+                " name =" +getName()+
+                ", type = " + getType()+
+                ", weight=" + getWeight()+
+                ", age=" + getAge() +
+                ", colour='" + getColour() + '\'' +
+                '}';
+    }
 }

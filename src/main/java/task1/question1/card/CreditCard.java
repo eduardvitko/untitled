@@ -22,6 +22,7 @@ public class CreditCard  extends BankingCard {
         this.balanceOwnFunds = balanceOwnFunds;
         this.limitOfCredit = limitOfCredit;
         this.interestRate = interestRate;
+
     }
 
     public double addBalance(int money){
@@ -79,6 +80,12 @@ public class CreditCard  extends BankingCard {
                 ", balanceOwnFunds=" + balanceOwnFunds +
                 ", limitOfCredit=" + limitOfCredit +
                 ", interestRate=" + interestRate +
+                ", nameBank = " + getNameBank() +
+                ",typeCard = " + getTypeCard() +
+                ",CVVCode = " + getCVVCode() +
+                ",balance = " + getBalance() +
+                ", numberCard = " + getNumber() +
+                ",dateExp = "  + getDateExp()+
                 '}';
     }
 

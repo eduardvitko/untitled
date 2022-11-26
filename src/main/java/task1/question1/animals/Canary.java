@@ -85,6 +85,12 @@ public class Canary extends Bird{
 
     @Override
     public String toString() {
-        return super.toString();
+        return "Canary{" +
+                " name =" +getName()+
+                ", type = " + getType()+
+                ", weight=" + getWeight()+
+                ", age=" + getAge() +
+                ", colour='" + getColour() + '\'' +
+                '}';
     }
 }
