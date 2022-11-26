@@ -12,12 +12,12 @@ public class Eagle extends Bird{
 
     @Override
     public void eat() {
-        super.eat();
+        System.out.println("Eagle is eat");
     }
 
     @Override
     public void drink() {
-        super.drink();
+        System.out.println("Eagle is drink");
     }
 
 
